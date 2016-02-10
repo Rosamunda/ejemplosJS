@@ -53,13 +53,6 @@ for (var i = 0; i<palabra.length; i++)
 	    break; 
 
 	}	    
-	console.log(resultado);
+	console.log(letra + " se traduce en números como " + resultado);
 
-
-// PASAR A DÍAS, HORAS, MINUTOS Y SEGUNDOS UNA CANTIDAD DE TIEMPO EXPRESADA EN SEGUNDOS.
-
-var segundo = 1;
-var minuto = 60; //segundos
-var hora = 3600; // segundos
-var dia = 86400; // segundos
 
