@@ -60,7 +60,28 @@ showNumBetweenPars(1,5);
 
 
 /*
-En base a una palabra, crear un objeto que cuente la cantidad de cada letra
-Ejemplo: Ingreso hola => {h:1, o:1, l:1, a:1}
-*/
+En base a un párrafo, contar las palabras*/
 
+
+
+
+function contarPalabras(frase){
+	var obj = {};
+	var listaPalabras = frase.split(" ");
+	console.log(listaPalabras);
+	var counter = 0;
+	for (var i=0; i<listaPalabras.length; i++){
+		var palabra = listaPalabras[i];
+		if(obj[palabra]) {
+			obj[palabra]++;
+		}else{
+			obj[palabra] = 1;
+			counter++;
+		}
+	}
+	console.log(counter);
+	return obj;
+};
+
+var resultado = contarPalabras("Este es un ejercicio muy largo Este");
+console.log(resultado);
